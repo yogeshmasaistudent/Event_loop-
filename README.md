@@ -1,5 +1,20 @@
 # JavaScript Event Loop - Complete Teaching Guide
 
+<div align="center">
+
+### 🚀 Master the JavaScript Event Loop | Complete Visual Teaching Guide
+
+[![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+[![Node.js](https://img.shields.io/badge/Node.js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white)](https://nodejs.org/)
+
+**Learn how JavaScript handles asynchronous operations with visual diagrams and real code examples**
+
+📚 Perfect for: Students | Developers | Interview Preparation | Teaching Demos
+
+</div>
+
+---
+
 ---------------------------------------------------------
 🎬 SLIDE 1 — Introduction: Why Learn the Event Loop?
 ---------------------------------------------------------
@@ -11,6 +26,10 @@ So how does it handle so many things without freezing?
 That is the magic of the Event Loop —
 the engine that makes JavaScript feel smooth, fast, and intelligent.
 Today, I will teach it in a way that even a complete beginner will understand.
+
+![Event Loop Overview](js-event-loop-explained.png)
+
+> **Visual Overview:** This diagram shows how JavaScript's Event Loop connects the Call Stack, Web APIs, and Callback Queue to handle asynchronous operations.
 
 ---------------------------------------------------------
 🎬 SLIDE 2 — JavaScript Is Single-Threaded
@@ -134,6 +153,10 @@ These go into a special VIP queue called the:
 JavaScript ALWAYS clears this queue first
 because microtasks have higher priority.
 
+![Microtask vs Macrotask Queue](1672668898515.png)
+
+> **Queue Priority:** Green shows the Microtask Queue (Promises) which always runs before the yellow Macrotask Queue (setTimeout, callbacks). The Event Loop checks microtasks first!
+
 ---------------------------------------------------------
 🧪 CODE EXAMPLE — Microtasks vs Macrotasks
 ---------------------------------------------------------
@@ -224,6 +247,10 @@ Microtasks > Macrotasks
 Event Loop manages what runs when
 Promises run before timeouts
 JavaScript becomes fast because of delegation
+
+![Complete Event Loop Architecture](Event-Loop-in-JavaScript.jpg)
+
+> **Complete Architecture:** This comprehensive diagram shows all components working together - Call Stack (yellow), Callback Queue (green onclick), Priority Queue (green Promises), WebAPIs (pink), and the Event Loop connecting everything. Notice how Promises have "Highest Priority"!
 
 ---------------------------------------------------------
 🎬 SLIDE 14 — Final Practice Code
