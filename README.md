@@ -60,7 +60,7 @@ A system that allows JavaScript to continue working
 while slow tasks are handled somewhere else.
 
 ---------------------------------------------------------
-🎬 SLIDE 4 — Browser to the Rescue
+🎬 SLIDE 4 — The Secret Helpers Behind JavaScript: Web APIs
 ---------------------------------------------------------
 JavaScript is not alone.
 It lives inside a browser.
