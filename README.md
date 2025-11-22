@@ -187,12 +187,58 @@ Timeout
 Now comes the hero of the story:
 🎯 Event Loop
 It continuously checks:
-Is the Call Stack empty?
-If YES → allow all microtasks to run
-If microtasks are empty → run one macrotask
-This cycle repeats forever.
-The Event Loop is the decision maker
-that keeps JavaScript smooth.
+The Event Loop is one of the most important ideas in JavaScript.
+If the Call Stack is the heart, then the Event Loop is the brain that decides when things should happen.
+
+You can think of the Event Loop as a manager who constantly watches the system and makes decisions every single moment.
+
+Here is how it works, in simple words:
+
+🧠 1. The Event Loop keeps watching the Call Stack
+
+It looks at the Call Stack again and again, asking:
+
+“Is JavaScript busy right now, or is it free?”
+
+If the Call Stack is busy running some code, the Event Loop patiently waits.
+
+🧠 2. When JavaScript becomes free, it gives first priority to Microtasks
+
+The Event Loop says:
+
+“Before anything else, let me finish all the microtasks (Promises).
+These are VIP tasks.”
+
+So it runs every single Promise callback, one after another, until the microtask queue is completely empty.
+
+This is why Promises run earlier than timeouts.
+
+🧠 3. After microtasks, it runs ONE macrotask
+
+When the microtask queue is empty, the Event Loop turns to the Callback Queue and says:
+
+“Okay, now I can take one normal callback, like setTimeout or a click event.”
+
+It will take only one macrotask at a time, run it completely, and then repeat the whole checking process again.
+
+🧠 4. This cycle repeats over and over
+
+This checking, deciding, and executing happens so fast that it seems magical —
+but it’s just the Event Loop doing its job perfectly.
+
+This is what keeps JavaScript:
+
+smooth
+
+fast
+
+responsive
+
+non-blocking
+
+able to manage multiple tasks
+
+even though it has only one thread
 
 ---------------------------------------------------------
 🎬 SLIDE 10 — Why Promise Chains Run Faster
