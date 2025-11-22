@@ -185,8 +185,7 @@ Timeout
 🎬 SLIDE 9 — The Event Loop
 ---------------------------------------------------------
 Now comes the hero of the story:
-🎯 Event Loop
-It continuously checks:
+🎯 Event Loop:
 The Event Loop is one of the most important ideas in JavaScript.
 If the Call Stack is the heart, then the Event Loop is the brain that decides when things should happen.
 
