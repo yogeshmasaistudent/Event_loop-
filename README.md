@@ -324,4 +324,67 @@ Correct answer:
 2
 ```
 
+---
+
+## 🎥 Visual Animations - Watch the Event Loop in Action!
+
+---
+
+Below are animated visualizations that demonstrate how JavaScript's Event Loop works in real-time. These animations will help you understand the flow of execution, asynchronous operations, and how different queues interact.
+
+### 📹 Animation 1: Basic Event Loop Flow
+
+<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.mp4" autoplay loop muted playsinline width="100%" controls></video>
+
+> **What You'll See:** This animation shows the basic flow of the Event Loop, demonstrating how the Call Stack, Web APIs, and Callback Queue work together.
+
+---
+
+### 📹 Animation 2: setTimeout Execution
+
+<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/j6.mp4" autoplay loop muted playsinline width="100%" controls></video>
+
+> **What You'll See:** Watch how setTimeout callbacks are handled by Web APIs and placed in the Callback Queue.
+
+---
+
+### 📹 Animation 3: Promise Microtask Queue
+
+<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.mp4" autoplay loop muted playsinline width="100%" controls></video>
+
+> **What You'll See:** See how Promises are placed in the Microtask Queue and get priority over regular callbacks.
+
+---
+
+### 📹 Animation 4: Microtask vs Macrotask Priority
+
+<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js11.mp4" autoplay loop muted playsinline width="100%" controls></video>
+
+> **What You'll See:** This animation demonstrates why Promises execute before setTimeout callbacks - the priority difference between queues.
+
+---
+
+### 📹 Animation 5: Complete Event Loop Cycle
+
+<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js12.mp4" autoplay loop muted playsinline width="100%" controls></video>
+
+> **What You'll See:** A comprehensive visualization showing the entire Event Loop cycle with multiple asynchronous operations.
+
+---
+
+### 🎯 Key Takeaways from Animations:
+
+✅ **Call Stack** executes code synchronously (one at a time)  
+✅ **Web APIs** handle async operations (timers, fetch, DOM events)  
+✅ **Microtask Queue** (Promises) has highest priority  
+✅ **Callback Queue** (setTimeout, events) runs after microtasks  
+✅ **Event Loop** coordinates everything perfectly
+
+---
+
+### 💡 Pro Tip:
+Watch these animations multiple times while reviewing the code examples above. Visual learning combined with code execution will solidify your understanding of the Event Loop!
+
+---
+
 🎉 Your STYLE C Markdown Slide Deck Is Ready!
