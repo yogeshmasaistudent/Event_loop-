@@ -334,23 +334,21 @@ Below are animated visualizations that demonstrate how JavaScript's Event Loop w
 
 ### 📹 Animation 1: Basic Event Loop Flow
 
-<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.mp4" autoplay loop muted playsinline width="100%" controls></video>
-
+![Animation 1: Basic Event Loop Flow](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.gif)
 > **What You'll See:** This animation shows the basic flow of the Event Loop, demonstrating how the Call Stack, Web APIs, and Callback Queue work together.
 
 ---
 
 ### 📹 Animation 2: setTimeout Execution
 
-<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/j6.mp4" autoplay loop muted playsinline width="100%" controls></video>
-
+![Animation 2: setTimeout Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js2.gif)
 > **What You'll See:** Watch how setTimeout callbacks are handled by Web APIs and placed in the Callback Queue.
 
 ---
 
 ### 📹 Animation 3: Promise Microtask Queue
 
-<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.mp4" autoplay loop muted playsinline width="100%" controls></video>
+![Animation 3: Promise Microtask Queue](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js3.gif)
 
 > **What You'll See:** See how Promises are placed in the Microtask Queue and get priority over regular callbacks.
 
@@ -358,7 +356,7 @@ Below are animated visualizations that demonstrate how JavaScript's Event Loop w
 
 ### 📹 Animation 4: Microtask vs Macrotask Priority
 
-<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js11.mp4" autoplay loop muted playsinline width="100%" controls></video>
+![Animation 4: Microtask vs Macrotask Priority](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js4.gif)
 
 > **What You'll See:** This animation demonstrates why Promises execute before setTimeout callbacks - the priority difference between queues.
 
@@ -366,9 +364,73 @@ Below are animated visualizations that demonstrate how JavaScript's Event Loop w
 
 ### 📹 Animation 5: Complete Event Loop Cycle
 
-<video src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js12.mp4" autoplay loop muted playsinline width="100%" controls></video>
+![Animation 5: Complete Event Loop Cycle](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif)
 
 > **What You'll See:** A comprehensive visualization showing the entire Event Loop cycle with multiple asynchronous operations.
+>
+> ---
+
+### 📹 Animation 6: Event Loop with Fetch API
+
+![Animation 6: Event Loop with Fetch API](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js6.gif)
+
+> **What You'll See:** How the Event Loop handles asynchronous fetch API calls and processes responses.
+
+---
+
+### 📹 Animation 7: Multiple setTimeout Callbacks
+
+![Animation 7: Multiple setTimeout Callbacks](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js7.gif)
+
+> **What You'll See:** Demonstration of how multiple setTimeout callbacks are queued and executed.
+
+---
+
+### 📹 Animation 8: Promise Chaining
+
+![Animation 8: Promise Chaining](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js8.gif)
+
+> **What You'll See:** Visual representation of how promise chains are processed through the microtask queue.
+
+---
+
+### 📹 Animation 9: Event Handlers and Callbacks
+
+![Animation 9: Event Handlers and Callbacks](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js9.gif)
+
+> **What You'll See:** How event handlers like click events are processed through the event loop.
+
+---
+
+### 📹 Animation 10: Async/Await Execution
+
+![Animation 10: Async/Await Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.gif)
+
+> **What You'll See:** See how async/await syntax works under the hood with the event loop.
+
+---
+
+### 📹 Animation 11: Complex Asynchronous Flow
+
+![Animation 11: Complex Asynchronous Flow](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js11.gif)
+
+> **What You'll See:** A complex example combining multiple asynchronous patterns.
+
+---
+
+### 📹 Animation 12: Call Stack Overflow Prevention
+
+![Animation 12: Call Stack Overflow Prevention](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js12.gif)
+
+> **What You'll See:** How the event loop prevents call stack overflow through async operations.
+
+---
+
+### 📹 Animation 13: Complete Real-World Example
+
+![Animation 13: Complete Real-World Example](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js13.gif)
+
+> **What You'll See:** A comprehensive real-world example demonstrating all event loop concepts together.
 
 ---
 
