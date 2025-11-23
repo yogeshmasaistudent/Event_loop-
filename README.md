@@ -31,6 +31,10 @@ Today, I will teach it in a way that even a complete beginner will understand.
 
 > **Visual Overview:** This diagram shows how JavaScript's Event Loop connects the Call Stack, Web APIs, and Callback Queue to handle asynchronous operations.
 
+
+![JavaScript Browser Event Loop](javascript%20browser%20-%20event%20loop.png)
+
+> **Browser Event Loop Architecture:** This diagram illustrates the complete JavaScript event loop architecture in the browser environment, showing how the JavaScript engine collaborates with Web APIs to manage asynchronous operations efficiently.
 ---------------------------------------------------------
 🎬 SLIDE 2 — JavaScript Is Single-Threaded
 ---------------------------------------------------------
