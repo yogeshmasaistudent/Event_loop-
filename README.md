@@ -197,32 +197,37 @@ But the message cannot interrupt JS directly…
 So where does it go?
 
 ---------------------------------------------------------
-🎬 SLIDE 7 — The Callback Queue
+🎬 SLIDE 7 — The Callback Queue (Task Queue)
 ---------------------------------------------------------
 Once the browser finishes tasks like:
-setTimeout
-setInterval
-click events
-It puts their callbacks into a waiting area called:
-🟥 Callback Queue
-(Also called the Macrotask Queue)
+- ⏰ setTimeout
+- 🔁 setInterval
+- 🖱️ Click events
+
+It puts their **callbacks** into a waiting area called:
+
+🟥 **Callback Queue** (also called **Macrotask Queue** or **Task Queue**)
+
 These tasks wait patiently for their turn.
 
----------------------------------------------------------
-🎬 SLIDE 8 — The Microtask Queue (VIP Queue)
----------------------------------------------------------
-Some tasks are more important.
-Promise.then()
-async/await
-queueMicrotask()
-These go into a special VIP queue called the:
-🟩 Microtask Queue
-JavaScript ALWAYS clears this queue first
-because microtasks have higher priority.
+But there's another queue that's even **more important**! 👇
 
-![Microtask vs Macrotask Queue](1672668898515.png)
+---------------------------------------------------------
+🎬  —  The VIP Queue - Microtask Queue
 
-> **Queue Priority:** Green shows the Microtask Queue (Promises) which always runs before the yellow Macrotask Queue (setTimeout, callbacks). The Event Loop checks microtasks first!
+---------------------------------------------------------
+Some tasks are **more important** and get **special treatment**:
+
+🟩 **Promise.then()**  
+🟩 **async/await**  
+🟩 **queueMicrotask()**  
+
+These go into a **VIP queue** called:
+
+🟩 **Microtask Queue**
+
+JavaScript **ALWAYS** clears this queue **first** because microtasks have **highest priority**!
+
 
 ---------------------------------------------------------
 🧪 CODE EXAMPLE — Microtasks vs Macrotasks
@@ -338,17 +343,6 @@ So it must wait for:
 This is why it feels slower than expected.
 
 ---------------------------------------------------------
-🎬 SLIDE 12 — Full Analogy: The Supermarket
----------------------------------------------------------
-Imagine a supermarket:
-👩‍💼 Cashier = JavaScript
-🧑‍🔧 Workers = Web APIs
-🟩 VIP line = Microtask Queue
-🟥 Normal line = Callback Queue
-🧑‍💼 Manager = Event Loop
-The manager always says:
-👉 "VIP customers first!"
-This is EXACTLY how JavaScript works.
 
 ---------------------------------------------------------
 🎬 SLIDE 13 — Final Summary (Crystal Clear)
