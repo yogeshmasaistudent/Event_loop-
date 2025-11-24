@@ -46,8 +46,8 @@ So the question is:
 > how does it handle SO MANY things without freezing?"**
 
 That's the magic of the **Event Loop** ⚡
-![Animation 5: Complete Event Loop Cycle](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif)
-![Basic Event Loop Flow](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.gif)
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif" width="600" alt="Animation 5: Complete Event Loop Cycle" />
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.gif" width="600" alt="Basic Event Loop Flow" />
 
 ---
 
@@ -87,14 +87,14 @@ Three!
 Four!
 
 ```
-![Animation 2: setTimeout Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js2.gif)
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js2.gif" width="600" alt="Animation 2: setTimeout Execution" />
 
 
 ---------------------------------------------------------
 
 
 
-![JavaScript Browser Event Loop](javascript%20browser%20-%20event%20loop.png)
+<img src="javascript%20browser%20-%20event%20loop.png" width="600" alt="JavaScript Browser Event Loop" />
 
 ---------------------------------------------------------
 
@@ -119,7 +119,7 @@ If JavaScript waits here...
 
 ### Let's See It In Action! 👀
 
-![Animation 3: Promise Microtask Queue](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js3.gif)
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js3.gif" width="600" alt="Animation 3: Promise Microtask Queue" />
 
 This is called **"Blocking"** - and it's **BAD**!
 
@@ -147,7 +147,7 @@ These superpowers are called **Web APIs**:
 🌐 **Geolocation** - Get user location  
 
 
-![Animation 4: Microtask vs Macrotask Priority](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js4.gif)
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js4.gif" width="600" alt="Animation 4: Microtask vs Macrotask Priority" />
 
 
 ### Here's The Brilliant Part:
@@ -210,7 +210,7 @@ It puts their **callbacks** into a waiting area called:
 
 These tasks wait patiently for their turn.
 
-![Animation 10: Async/Await Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.gif)
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.gif" width="600" alt="Animation 10: Async/Await Execution" />
 But there's another queue that's even **more important**! 👇
 
   ### The VIP Queue - Microtask Queue
@@ -347,7 +347,7 @@ Event Loop manages what runs when
 Promises run before timeouts
 JavaScript becomes fast because of delegation
 
-![Complete Event Loop Architecture](Event-Loop-in-JavaScript.jpg)
+<img src="Event-Loop-in-JavaScript.jpg" width="600" alt="Complete Event Loop Architecture" />
 
 > **Complete Architecture:** This comprehensive diagram shows all components working together - Call Stack (yellow), Callback Queue (green onclick), Priority Queue (green Promises), WebAPIs (pink), and the Event Loop connecting everything. Notice how Promises have "Highest Priority"!
 
