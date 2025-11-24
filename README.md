@@ -210,10 +210,10 @@ It puts their **callbacks** into a waiting area called:
 
 These tasks wait patiently for their turn.
 
+![Animation 10: Async/Await Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.gif)
 But there's another queue that's even **more important**! 👇
 
----------------------------------------------------------
-🎬  —  The VIP Queue - Microtask Queue
+  ### The VIP Queue - Microtask Queue
 
 ---------------------------------------------------------
 Some tasks are **more important** and get **special treatment**:
@@ -256,60 +256,53 @@ Timeout
 ---------------------------------------------------------
 🎬 SLIDE 9 — The Event Loop
 ---------------------------------------------------------
-Now comes the hero of the story:
-🎯 Event Loop:
-The Event Loop is one of the most important ideas in JavaScript.
-If the Call Stack is the heart, then the Event Loop is the brain that decides when things should happen.
+Now comes the **hero** of the story:
 
-You can think of the Event Loop as a manager who constantly watches the system and makes decisions every single moment.
+### 🎯 The Event Loop
 
-Here is how it works, in simple words:
+The **Event Loop** is the **brain** that decides **when things should happen**.
 
-🧠 1. The Event Loop keeps watching the Call Stack
+If the Call Stack is the **heart**, then the Event Loop is the **brain** ��
 
-It looks at the Call Stack again and again, asking:
+**Here's how it works:**
 
-“Is JavaScript busy right now, or is it free?”
+### 🧠 Step 1: Event Loop Watches the Call Stack
 
-If the Call Stack is busy running some code, the Event Loop patiently waits.
+It keeps asking:  
+> "Is JavaScript busy right now, or is it free?"
 
-🧠 2. When JavaScript becomes free, it gives first priority to Microtasks
+If the Call Stack is busy, the Event Loop **waits**.
 
-The Event Loop says:
+### 🧠 Step 2: When JavaScript Becomes Free...
 
-“Before anything else, let me finish all the microtasks (Promises).
-These are VIP tasks.”
+The Event Loop says:  
+> "Before anything else, let me finish all the **microtasks** (Promises). These are VIP tasks!"
 
-So it runs every single Promise callback, one after another, until the microtask queue is completely empty.
+It runs **every single Promise callback**, one after another, until the microtask queue is **completely empty**.
 
-This is why Promises run earlier than timeouts.
+This is why **Promises run earlier than timeouts**! 🚀
 
-🧠 3. After microtasks, it runs ONE macrotask
+### 🧠 Step 3: After Microtasks, It Runs ONE Macrotask
 
-When the microtask queue is empty, the Event Loop turns to the Callback Queue and says:
+When the microtask queue is empty, the Event Loop turns to the **Task Queue** and says:  
+> "Okay, now I can take **one normal callback**, like setTimeout or a click event."
 
-“Okay, now I can take one normal callback, like setTimeout or a click event.”
+It will take **only one macrotask** at a time, run it completely, and then **repeat** the whole process again.
 
-It will take only one macrotask at a time, run it completely, and then repeat the whole checking process again.
+### 🧠 Step 4: This Cycle Repeats Forever
 
-🧠 4. This cycle repeats over and over
+This checking, deciding, and executing happens so fast that it seems **magical** ✨
 
-This checking, deciding, and executing happens so fast that it seems magical —
-but it’s just the Event Loop doing its job perfectly.
+But it's just the Event Loop doing its job **perfectly**!
 
 This is what keeps JavaScript:
+- 💨 Smooth
+- ⚡ Fast
+- 📱 Responsive
+- 🚫 Non-blocking
+- 🎯 Able to manage multiple tasks
 
-smooth
-
-fast
-
-responsive
-
-non-blocking
-
-able to manage multiple tasks
-
-even though it has only one thread
+...even though it has **only one thread**!
 
 ---------------------------------------------------------
 🎬 SLIDE 10 — Why Promise Chains Run Faster
@@ -382,128 +375,3 @@ Correct answer:
 ```
 
 ---
-
-## 🎥 Visual Animations - Watch the Event Loop in Action!
-
----
-
-Below are animated visualizations that demonstrate how JavaScript's Event Loop works in real-time. These animations will help you understand the flow of execution, asynchronous operations, and how different queues interact.
-
-### 📹 Animation 1: Basic Event Loop Flow
-
-![Animation 1: Basic Event Loop Flow](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.gif)
-> **What You'll See:** This animation shows the basic flow of the Event Loop, demonstrating how the Call Stack, Web APIs, and Callback Queue work together.
-
----
-
-### 📹 Animation 2: setTimeout Execution
-
-![Animation 2: setTimeout Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js2.gif)
-> **What You'll See:** Watch how setTimeout callbacks are handled by Web APIs and placed in the Callback Queue.
-
----
-
-### 📹 Animation 3: Promise Microtask Queue
-
-![Animation 3: Promise Microtask Queue](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js3.gif)
-
-> **What You'll See:** See how Promises are placed in the Microtask Queue and get priority over regular callbacks.
-
----
-
-### 📹 Animation 4: Microtask vs Macrotask Priority
-
-![Animation 4: Microtask vs Macrotask Priority](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js4.gif)
-
-> **What You'll See:** This animation demonstrates why Promises execute before setTimeout callbacks - the priority difference between queues.
-
----
-
-### 📹 Animation 5: Complete Event Loop Cycle
-
-![Animation 5: Complete Event Loop Cycle](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif)
-
-> **What You'll See:** A comprehensive visualization showing the entire Event Loop cycle with multiple asynchronous operations.
->
-> ---
-
-### 📹 Animation 6: Event Loop with Fetch API
-
-![Animation 6: Event Loop with Fetch API](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js6.gif)
-
-> **What You'll See:** How the Event Loop handles asynchronous fetch API calls and processes responses.
-
----
-
-### 📹 Animation 7: Multiple setTimeout Callbacks
-
-![Animation 7: Multiple setTimeout Callbacks](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js7.gif)
-
-> **What You'll See:** Demonstration of how multiple setTimeout callbacks are queued and executed.
-
----
-
-### 📹 Animation 8: Promise Chaining
-
-![Animation 8: Promise Chaining](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js8.gif)
-
-> **What You'll See:** Visual representation of how promise chains are processed through the microtask queue.
-
----
-
-### 📹 Animation 9: Event Handlers and Callbacks
-
-![Animation 9: Event Handlers and Callbacks](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js9.gif)
-
-> **What You'll See:** How event handlers like click events are processed through the event loop.
-
----
-
-### 📹 Animation 10: Async/Await Execution
-
-![Animation 10: Async/Await Execution](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js10.gif)
-
-> **What You'll See:** See how async/await syntax works under the hood with the event loop.
-
----
-
-### 📹 Animation 11: Complex Asynchronous Flow
-
-![Animation 11: Complex Asynchronous Flow](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js11.gif)
-
-> **What You'll See:** A complex example combining multiple asynchronous patterns.
-
----
-
-### 📹 Animation 12: Call Stack Overflow Prevention
-
-![Animation 12: Call Stack Overflow Prevention](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js12.gif)
-
-> **What You'll See:** How the event loop prevents call stack overflow through async operations.
-
----
-
-### 📹 Animation 13: Complete Real-World Example
-
-![Animation 13: Complete Real-World Example](https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js13.gif)
-
-> **What You'll See:** A comprehensive real-world example demonstrating all event loop concepts together.
-
----
-
-### 🎯 Key Takeaways from Animations:
-
-✅ **Call Stack** executes code synchronously (one at a time)  
-✅ **Web APIs** handle async operations (timers, fetch, DOM events)  
-✅ **Microtask Queue** (Promises) has highest priority  
-✅ **Callback Queue** (setTimeout, events) runs after microtasks  
-✅ **Event Loop** coordinates everything perfectly
-
----
-
-### 💡 Pro Tip:
-Watch these animations multiple times while reviewing the code examples above. Visual learning combined with code execution will solidify your understanding of the Event Loop!
-
----
-
-🎉 Your STYLE C Markdown Slide Deck Is Ready!
