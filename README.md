@@ -1,4 +1,4 @@
-# JavaScript Event Loop - Complete Teaching Guide
+# JavaScript Event Loop 
 
 <div align="center">
 
