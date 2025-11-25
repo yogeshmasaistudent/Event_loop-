@@ -25,7 +25,7 @@ Are you ready? Let's begin! 👇
 
 ---
 
-## 🎬 The Big Question
+## 🌟 The Big Question
 
 **JavaScript is one of the most powerful languages today.**
 
@@ -54,7 +54,7 @@ So the question is:
 
 ---
 
-## 🎬 JavaScript is Single-Threaded
+## 🌟 JavaScript is Single-Threaded
 ---
 Let me explain with a fun example:
 
@@ -133,7 +133,7 @@ So we need a different system. A system that allows JavaScript to **continue wor
 
 But where? 👇
 ---
-🎬 SLIDE 4 — The Secret Helpers Behind JavaScript: Web APIs
+🌟 The Secret Helpers Behind JavaScript: Web APIs
 ---
 **And here comes the twist!**
 **JavaScript is not alone!**
@@ -166,7 +166,7 @@ Whenever JavaScript finds a slow task, it does something very **clever**:
 
 ---
 
-🎬 SLIDE 5 — Call Stack: The Heart of JavaScript
+ 🌟  Call Stack: The Heart of JavaScript
 ---
 
 The **Call Stack** is where JavaScript actually **executes code**.
@@ -182,7 +182,7 @@ If something heavy sits on top → everything behind it stops.**
 
 
 ---
-🎬 SLIDE 6 — Web APIs: Handling Slow Work for JavaScript
+ 🌟 Web APIs: Handling Slow Work for JavaScript
 ---------------------------------------------------------
 **When JavaScript sees this:**
 ```javascript
@@ -201,7 +201,7 @@ It sends the timer to the browser.**
   It must wait somewhere…”**
 
 ---
-🎬 SLIDE 7 — The Callback Queue (Task Queue)
+🌟 The Callback Queue (Task Queue)
 ---------------------------------------------------------
 **This waiting area is called the Callback Queue.
   Here we place tasks from:**
@@ -264,7 +264,7 @@ Timeout
 **Promise wins because microtasks are VIP.**
 
 ---
-🎬 SLIDE 9 — The Event Loop
+ 🌟  The Event Loop
 ---------------------------------------------------------
 Now comes the **hero** of the story:
 
@@ -315,7 +315,7 @@ This is what keeps JavaScript:
 ...even though it has **only one thread**!
 
 ---
-🎬 SLIDE 10 — Why Promise Chains Run Faster
+ 🌟 Why Promise Chains Run Faster
 ---
 ```javascript
 Promise.resolve()
@@ -337,7 +337,7 @@ B
 makes total sense.
 
 ---
-🎬 SLIDE 11 — Why setTimeout(0) Is NOT Instant
+🌟 Why setTimeout(0) Is NOT Instant
 ---
 **Some students ask:
   Sir, if I write setTimeout with 0 milliseconds, why doesn’t it run immediately?’**
@@ -348,7 +348,7 @@ makes total sense.
 This is why it feels slower than expected.
 
 ---
-🎬 SLIDE 13 — Final Summary (Crystal Clear)
+ 🌟  Final Summary (Crystal Clear)
 ---------------------------------------------------------
 **Let’s summarize everything in one shot:**
 ✔ JavaScript is single-threaded
@@ -365,7 +365,7 @@ This is how JavaScript handles thousands of tasks without freezing!”**
 > **Complete Architecture:** This comprehensive diagram shows all components working together - Call Stack (yellow), Callback Queue (green onclick), Priority Queue (green Promises), WebAPIs (pink), and the Event Loop connecting everything. Notice how Promises have "Highest Priority"!
 
 ---
-🎬 SLIDE 14 — Final Practice Code
+🌟  Final Practice Code
 ---------------------------------------------------------
 ```javascript
 console.log(1);
