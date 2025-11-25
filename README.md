@@ -25,9 +25,10 @@ Are you ready? Let's begin! 👇
 
 ---
 
-## 🌟 The Big Question
-
-**JavaScript is one of the most powerful languages today.**
+##  🌟  Meet the Event Loop: The Heartbeat of JavaScript
+**What is javascript.!**
+**JavaScript is one of the most powerful languages today in the word .**
+**JavaScript is a synchronous, single-threaded programming language, which means it can execute only one command at a time and in a specific order (line by line)**
 
 It runs inside every browser, handles:
 - ✨ User interactions (clicks, scrolls)
