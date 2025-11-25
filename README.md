@@ -54,7 +54,7 @@ So the question is:
 
 ---
 
-## 🌟 JavaScript is Single-Threaded
+## 🌟 JavaScript is Single-threaded + Synchronous Nature
 ---
 Let me explain with a fun example:
 
@@ -107,10 +107,25 @@ But the real problem starts when JavaScript faces a slow task.**
 ---
 
 
+ 🌟  Call Stack: The Heart of JavaScript
+---
 
+The **Call Stack** is where JavaScript actually **executes code**.
+
+ Think of it like a **stack of plates** 🍽️:
+- When a function is called → it's placed **on top**
+- When a function  finished → it's **removed**
+- JavaScript always works on the **topmost plate**
+- JavaScript always works on the top plate.
+
+**If something heavy sits on top → everything behind it stops.**
+
+
+
+---
 
 ## 🌟The Problem - What If Something Takes Time?(Slow Tasks)
----
+
 **What if JavaScript gets a huge loop?
 Or a network request waiting for 5 seconds?
 Should JavaScript sit and wait?
@@ -166,19 +181,6 @@ Whenever JavaScript finds a slow task, it does something very **clever**:
 
 ---
 
- 🌟  Call Stack: The Heart of JavaScript
----
-
-The **Call Stack** is where JavaScript actually **executes code**.
-
- Think of it like a **stack of plates** 🍽️:
-- When a function is called → it's placed **on top**
-- When a function  finished → it's **removed**
-- JavaScript always works on the **topmost plate**
-- JavaScript always works on the top plate.
-
-If something heavy sits on top → everything behind it stops.**
----------------------------------------------------------
 
 
 ---
