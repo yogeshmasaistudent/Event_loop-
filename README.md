@@ -46,15 +46,16 @@ So the question is:
 
 > **"If JavaScript can do only one thing at a time,  
 > how does it handle SO MANY things without freezing?"**
+>**That's the magic of the Event Loop** ⚡
 
-That's the magic of the **Event Loop** ⚡
-<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif" width="600" alt="Animation 5: Complete Event Loop Cycle" />
 <img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js1.gif" width="600" alt="Basic Event Loop Flow" />
+<img src="https://github.com/yogeshmasaistudent/Event_loop-/raw/main/js5.gif" width="600" alt="Animation 5: Complete Event Loop Cycle" />
+
 
 ---
 
 ## 🎬 JavaScript is Single-Threaded
-
+---
 Let me explain with a fun example:
 
 Imagine JavaScript is **one person** working inside a kitchen..  
@@ -98,20 +99,18 @@ Four!
 But the real problem starts when JavaScript faces a slow task.**
 
 
----------------------------------------------------------
+---
 
 
 <img src="javascript%20browser%20-%20event%20loop.png" width="600" alt="JavaScript Browser Event Loop" />
 
----------------------------------------------------------
+---
 
-
----------------------------------------------------------
 
 
 
 ## 🌟The Problem - What If Something Takes Time?(Slow Tasks)
-
+---
 **What if JavaScript gets a huge loop?
 Or a network request waiting for 5 seconds?
 Should JavaScript sit and wait?
@@ -130,12 +129,12 @@ This is called **"Blocking"** - and it's **BAD**!
 So we need a different system. A system that allows JavaScript to **continue working** while slow tasks are handled **somewhere else**.
 
 **So JavaScript needed help…**
----------------------------------------------------------
+---
 
 But where? 👇
----------------------------------------------------------
+---
 🎬 SLIDE 4 — The Secret Helpers Behind JavaScript: Web APIs
----------------------------------------------------------
+---
 **And here comes the twist!**
 **JavaScript is not alone!**
 
@@ -165,11 +164,10 @@ Whenever JavaScript finds a slow task, it does something very **clever**:
 
 **This is what makes JavaScript fast and non-blocking!** 🚀
 
----------------------------------------------------------------------
+---
 
----------------------------------------------------------------------
 🎬 SLIDE 5 — Call Stack: The Heart of JavaScript
----------------------------------------------------------
+---
 
 The **Call Stack** is where JavaScript actually **executes code**.
 
@@ -183,7 +181,7 @@ If something heavy sits on top → everything behind it stops.**
 ---------------------------------------------------------
 
 
----------------------------------------------------------
+---
 🎬 SLIDE 6 — Web APIs: Handling Slow Work for JavaScript
 ---------------------------------------------------------
 **When JavaScript sees this:**
@@ -202,7 +200,7 @@ It sends the timer to the browser.**
 **But this callback cannot interrupt JavaScript.
   It must wait somewhere…”**
 
----------------------------------------------------------
+---
 🎬 SLIDE 7 — The Callback Queue (Task Queue)
 ---------------------------------------------------------
 **This waiting area is called the Callback Queue.
@@ -223,7 +221,7 @@ But there's another queue that's even **more important**! 👇
 
   ### The VIP Queue - Microtask Queue
 
----------------------------------------------------------
+---
 **Some callbacks are more important.
   They get VIP entry.**
 
@@ -238,9 +236,10 @@ These go into a **VIP queue** called:
 JavaScript **ALWAYS** clears this queue **first** because microtasks have **highest priority**!
 
 
----------------------------------------------------------
-🧪 CODE EXAMPLE — Microtasks vs Macrotasks
----------------------------------------------------------
+---
+🧪 CODE EXAMPLE — Microtasks Queue vs  Task Queue (Callback Queue)
+---
+
 ```javascript
 console.log("Start");
 
@@ -264,7 +263,7 @@ Timeout
 
 **Promise wins because microtasks are VIP.**
 
----------------------------------------------------------
+---
 🎬 SLIDE 9 — The Event Loop
 ---------------------------------------------------------
 Now comes the **hero** of the story:
@@ -315,9 +314,9 @@ This is what keeps JavaScript:
 
 ...even though it has **only one thread**!
 
----------------------------------------------------------
+---
 🎬 SLIDE 10 — Why Promise Chains Run Faster
----------------------------------------------------------
+---
 ```javascript
 Promise.resolve()
   .then(() => console.log("C"))
@@ -337,9 +336,9 @@ B
 
 makes total sense.
 
----------------------------------------------------------
+---
 🎬 SLIDE 11 — Why setTimeout(0) Is NOT Instant
----------------------------------------------------------
+---
 **Some students ask:
   Sir, if I write setTimeout with 0 milliseconds, why doesn’t it run immediately?’**
   A timer with 0ms still goes to the callback queue.
@@ -348,9 +347,7 @@ makes total sense.
 ✔ Microtasks to complete
 This is why it feels slower than expected.
 
----------------------------------------------------------
-
----------------------------------------------------------
+---
 🎬 SLIDE 13 — Final Summary (Crystal Clear)
 ---------------------------------------------------------
 **Let’s summarize everything in one shot:**
@@ -367,7 +364,7 @@ This is how JavaScript handles thousands of tasks without freezing!”**
 
 > **Complete Architecture:** This comprehensive diagram shows all components working together - Call Stack (yellow), Callback Queue (green onclick), Priority Queue (green Promises), WebAPIs (pink), and the Event Loop connecting everything. Notice how Promises have "Highest Priority"!
 
----------------------------------------------------------
+---
 🎬 SLIDE 14 — Final Practice Code
 ---------------------------------------------------------
 ```javascript
@@ -390,11 +387,11 @@ Correct answer:
 2
 ```
 
--------------------------------------------------------------------------------------------
+---
 
 ***Congratulations Dear Students!
 Now you understand one of the most powerful and magical concepts in JavaScript — the Event Loop.
 If you understand this, you are already better than 70% of developers.
 Keep practicing, keep experimenting — and keep coding! Thanks you so much” 🚀💛***
 
-
+---
