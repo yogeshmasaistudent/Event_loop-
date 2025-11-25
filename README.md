@@ -1,4 +1,3 @@
-# JavaScript Event Loop 
 
 <div align="center">
 
